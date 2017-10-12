@@ -8,7 +8,8 @@
 		 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 		 <script src="jquery/jquery-3.2.1.js"></script>
 		 <link rel="stylesheet" href="css/mystyle.css">
-		 <script src=https://unpkg.com/popper.js></script>
+         <script src=https://unpkg.com/popper.js></script>
+         <script src=js/myscript.js></script>
 		 <script src="js/bootstrap.js"></script>
 		 <nav class="navbar navbar-expand-sm navbar-dark" style="background: #D83F07;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,19 +44,43 @@
 		</nav>
 	</head>
     <br></br>
-    
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <br></br>
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <br></br>
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <br></br>
-    <p>
-        This paragraph is draggable.
-    <p>
-    <br><br>
+    <div class="container">
+            
+        <div class="jumbotron">
+        <div align="center">
+            <h1> Welcome! </h1>
+        </div>
+        <br></br>
+        <p>
+            This page will demo javascript drag and drop items. It uses the function from 
+            jquery to get the docuement items by ID. To use this page, click which items you 
+            would like to make draggable and drag them into the boxes.Reload to reset.
+        </p>
+        </div>
+    <br><br> 
 
 	<body>
-
+    <div align="center">
+        </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br></br>
+            <p id="pg1" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                This paragraph is draggable.
+            <p>
+            <br><br>
+            <img id="drag1" src="img/woulogo.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    </div>
 	</body>
 </html>
