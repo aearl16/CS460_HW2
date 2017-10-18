@@ -56,6 +56,11 @@
             jquery to get the docuement items by ID. To use this page, click which items you 
             would like to make draggable and drag them into the boxes.Reload to reset.
         </p>
+        <ul>
+            <li><input id="pDragger" onclick=setAttrP() type="checkbox">  Set Paragraphs Draggable</li>
+            <li><input id="tDragger" onclick=setAttrT() type="checkbox"> Set Text Draggable</li>
+            <li><input id ="imgDragger" onclick=setAttrImg() type="checkbox"> Set Image Draggable</li>
+        </ul>
         </div>
     <br><br> 
 
@@ -68,19 +73,16 @@
             <br></br>
             <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <br></br>
-            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <br></br>
-            <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <br></br>
-            <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <br></br>
-            <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <br></br>
-            <p id="pg1" draggable="true" ondragstart="drag(event)" width="336" height="69">
+            <p id="pg1" ondragstart="drag(event)" width="336" height="69">
                 This paragraph is draggable.
             <p>
             <br><br>
-            <img id="drag1" src="img/woulogo.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+            <img id="drag1" draggable="false" src="img/woulogo.png" ondragstart="drag(event)" width="336" height="69">
+            <br></br>
+            <div id="drag2" ondragstart="drag(event)">
+                This is plain text.
+            </div>
+            <br></br>
     </div>
 	</body>
 </html>
